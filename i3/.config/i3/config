@@ -16,7 +16,7 @@ set $mod Mod4
 
 exec --no-startup-id xrandr --output DP-0 --primary --mode 2560x1440 --rate 165.08 --pos 1920x0 --rotate normal --output eDP-1-1 --mode 1920x1080 --pos 0x360 --rotate normal
 exec --no-startup-id picom
-exec --no-startup-id feh --bg-scale ~/backgrounds/nice-blue-background.png
+exec_always --no-startup-id feh --bg-scale ~/dotfiles/backgrounds/gruvbox-junji-ito.png
 exec --no-startup-id xrdb -merge ~/.Xresources
 # exec_always --no-startup-id setxkbmap -option ctrl:nocaps
 
