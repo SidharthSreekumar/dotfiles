@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 
 set $mod Mod4
 # set $mod Mod1
@@ -210,7 +210,8 @@ set $gray       #a89984
 set $darkgray   #1d2021
 set $lightgray  #bdae93
 
-gaps inner 5px
+gaps outer 5
+gaps inner 5
 
 # class                 border      backgr.     text        indicator child_border
 client.focused          $orange     $lightgray  $bg         $purple   $yellow
