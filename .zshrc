@@ -118,6 +118,7 @@ alias cls='clear'
 alias vi='nvim'
 alias svi='sudo vi'
 alias vis='nvim "+set si"'
+alias v='nvim'
 
 # Change directory aliases
 alias home='cd ~'
@@ -180,3 +181,9 @@ cdls () {
 #
 # Starship
 eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+pokemon-colorscripts -sr
