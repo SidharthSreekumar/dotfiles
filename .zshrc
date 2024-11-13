@@ -119,7 +119,6 @@ alias vi='nvim'
 alias svi='sudo vi'
 alias vis='nvim "+set si"'
 alias v='nvim'
-
 # Change directory aliases
 alias home='cd ~'
 alias cd..='cd ..'
@@ -155,6 +154,9 @@ alias mkgz='tar -cvzf'
 alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
+
+# Fedora aliases (dnf)
+alias getinstalled="rpm --query --all --queryformat '%{NAME}.%{ARCH}: %{SUMMARY}\n'"
 
 # Functions
 
