@@ -155,6 +155,9 @@ alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
 
+# Lazygit
+alias lg='lazygit'
+
 # Fedora aliases (dnf)
 alias getinstalled="rpm --query --all --queryformat '%{NAME}.%{ARCH}: %{SUMMARY}\n'"
 
@@ -188,3 +191,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# WebStorm
+export PATH="/home/kaizen/WebStorm/bin:$PATH"
