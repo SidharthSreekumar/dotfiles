@@ -119,6 +119,13 @@ alias vi='nvim'
 alias svi='sudo vi'
 alias vis='nvim "+set si"'
 alias v='nvim'
+
+# Fixes scaling issues in vscode with wayland
+alias code='code --ozone-platform=wayland'
+
+# LazyGit
+alias lg='lazygit'
+
 # Change directory aliases
 alias home='cd ~'
 alias cd..='cd ..'
@@ -155,8 +162,17 @@ alias untar='tar -xvf'
 alias unbz2='tar -xvjf'
 alias ungz='tar -xvzf'
 
-# Lazygit
-alias lg='lazygit'
+# Alias for git commands
+alias gck="git checkout"
+
+# Application aliases
+alias ff='fzf'
+
+# eza aliases
+alias ls='eza -a'
+alias lsh='eza -a --hyperlink'
+alias ll='eza -alZ'
+alias llh='eza -alZ --hyperlink'
 
 # Fedora aliases (dnf)
 alias getinstalled="rpm --query --all --queryformat '%{NAME}.%{ARCH}: %{SUMMARY}\n'"
@@ -191,5 +207,26 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# WebStorm
-export PATH="/home/kaizen/WebStorm/bin:$PATH"
+# Created by `pipx` on 2025-02-06 19:12:36
+export PATH="$PATH:/home/srees1/.local/bin"
+
+# Poetry settings
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
+
+# Run cert expiry check script
+# $HOME/code/scripts/check_cert_expiry.sh
+
+# Virtiofsd for podman machine
+export PATH=$PATH:/usr/libexec
+
+# Golang
+export PATH=$PATH:/usr/local/go/bin
+# Needed for Go global packages
+export PATH="$HOME/go/bin:$PATH"
+
+# eza
+export PATH="$PATH:/home/srees1/.cargo/bin"
+
+# Zoxide
+eval "$(zoxide init zsh)"
