@@ -136,7 +136,7 @@ alias .....='cd ../../../..'
 
 # Alias's for multiple directory listing commands
 alias la='ls -Alh' # show hidden files
-alias ls='ls -aFh --color=always' # add colors and file type extensions
+# alias ls='ls -aFh --color=always' # add colors and file type extensions
 alias lx='ls -lXBh' # sort by extension
 alias lk='ls -lSrh' # sort by size
 alias lc='ls -lcrh' # sort by change time
@@ -145,7 +145,7 @@ alias lr='ls -lRh' # recursive ls
 alias lt='ls -ltrh' # sort by date
 alias lm='ls -alh |more' # pipe through 'more'
 alias lw='ls -xAh' # wide listing format
-alias ll='ls -Fls' # long listing format
+# alias ll='ls -Fls' # long listing format
 alias labc='ls -lap' #alphabetical sort
 alias lf="ls -l | egrep -v '^d'" # files only
 alias ldir="ls -l | egrep '^d'" # directories only
@@ -226,7 +226,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH="$HOME/go/bin:$PATH"
 
 # eza
-export PATH="$PATH:/home/srees1/.cargo/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 
 # Zoxide
 eval "$(zoxide init zsh)"
