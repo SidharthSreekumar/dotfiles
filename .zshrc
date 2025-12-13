@@ -174,6 +174,12 @@ alias lsh='eza -a --hyperlink'
 alias ll='eza -alZ'
 alias llh='eza -alZ --hyperlink'
 
+# Ansible Navigator
+alias an='ansible-navigator'
+
+# Ansible Galaxy
+alias ag='ansible-galaxy'
+
 # Fedora aliases (dnf)
 alias getinstalled="rpm --query --all --queryformat '%{NAME}.%{ARCH}: %{SUMMARY}\n'"
 
